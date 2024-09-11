@@ -31,6 +31,11 @@ export default function App() {
         source={require("../sorvete/src/Imagem/sorvetecokie.png")}
       />
 
+      <Image
+        style={styles.seta}
+        source={require("../sorvete/src/Imagem/seta.png")}
+      />
+
       <Text style={styles.txtsorvete}>blablabla</Text>
 
       <Image
@@ -58,13 +63,15 @@ export default function App() {
         source={require("../sorvete/src/Imagem/sorvetecokie.png")}
       />
 
-      <Text style={styles.valor}> R$ 15,00</Text>
-
-      <View style={{ backgroundColor: "white", top: "50%", left: "15%" }}>
+      <View style={{ top: "55%", left: "10%" }}>
         <AntDesign name="hearto" size={30} color="black" />
-      </View>
 
-      <Text>Github</Text>
+        <Text style={styles.valor}> R$ 15,00</Text>
+
+        <View style={{ bottom: "50%", left: "32%", top: "-55%" }}>
+          <AntDesign name="shoppingcart" size={35} color="black" />
+        </View>
+      </View>
     </View>
   );
 }
@@ -113,6 +120,14 @@ const styles = StyleSheet.create({
     top: "10%",
   },
 
+  seta: {
+    width: 450,
+    height: 400,
+    position: "absolute",
+    top: "25%",
+    left: "-0%",
+  },
+
   sorvete1: {
     width: 150,
     height: 250,
@@ -133,7 +148,7 @@ const styles = StyleSheet.create({
     width: 150,
     height: 300,
     position: "absolute",
-    top: "70%",
+    top: "75%",
     left: "85%",
   },
 
@@ -158,8 +173,8 @@ const styles = StyleSheet.create({
   txtsorvete: {
     fontSize: 30,
     position: "absolute",
-    top: "50%",
-    right: "5%",
+    top: "60%",
+    left: "65%",
     fontFamily: "Rokkitt",
   },
 
@@ -167,7 +182,6 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontFamily: "Rokkitt",
     position: "absolute",
-    top: "65%",
-    left: "70%",
+    left: 40,
   },
 });
